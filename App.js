@@ -7,6 +7,7 @@ import Starts from './components/starts';
 import Presents from './components/presents';
 import InputName from './components/inputName';
 import FinishPresents from './components/finishPresents';
+import Home from './components/home';
 
 const Stack = createStackNavigator();
 
@@ -43,6 +44,14 @@ export default function App() {
                     component={FinishPresents}
                     options={{
                         title:''
+                    }}
+                />
+
+                <Stack.Screen
+                    name='home'
+                    component={Home}
+                    options={{
+                        headerShown: false
                     }}
                 />
             </Stack.Navigator>

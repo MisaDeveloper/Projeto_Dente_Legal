@@ -1,23 +1,17 @@
 import React, {useState} from 'react';
 import {View, Text, Image, TouchableOpacity, ScrollView, TextInput} from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { CommonActions } from '@react-navigation/native';
 
 export default function presents({navigation}) {
 
-    const [name, setName] = useState(null);
-
-    const getValue = async (key) => {
-        try {
-            const value = await AsyncStorage.getItem(key)
-            if(value !== null) {
-                setName(value)
-            }
-        } catch (e) {
-            return(e)
-        }
-    };
-
-    getValue('nome');
+    function goToHome() {
+        navigation.dispatch(
+            CommonActions.reset({
+                index: 0,
+                routes: [{name: 'home'}]
+            })
+        )
+    }
 
     return(
             <ScrollView style={{backgroundColor:'#FFFAFA', height:'100%'}}>
@@ -41,7 +35,7 @@ export default function presents({navigation}) {
                             fontWeight:'bold',
                             color:'#52665A',
                             fontSize:35
-                        }}>Legal, {name}</Text>
+                        }}>Legal!</Text>
                     </View>
 
                     <View style={{
@@ -65,7 +59,9 @@ export default function presents({navigation}) {
                         </Text>
                     </View>
 
-                    <TouchableOpacity style={{
+                    <TouchableOpacity 
+                    onPress={() => goToHome()}
+                    style={{
                         marginTop: 45,
                         marginBottom:30,
                         alignItems:'center',
