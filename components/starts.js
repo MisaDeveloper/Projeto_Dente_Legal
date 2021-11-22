@@ -1,15 +1,31 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet} from 'react-native';
+import {View, Image} from 'react-native';
 import { CommonActions } from '@react-navigation/native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function starts({navigation}) {
+
+    const getName = async () => {
+        try {
+            const value = await AsyncStorage.getItem('nome');
+            if(value != null) {
+                return('home')
+            } else {
+                return('presents')
+            }
+        } catch (e) {
+            return(e);
+        }
+    };
+
+    const valida = getName();
 
     function start() {
         setTimeout(function(){
             navigation.dispatch(
                 CommonActions.reset({
                     index: 0,
-                    routes: [{name: 'presents'}]
+                    routes: [{name: valida['_W']}]
                 })
             )
         }, 3000);

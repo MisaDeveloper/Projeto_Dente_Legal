@@ -36,13 +36,13 @@ export default function presents({navigation}) {
                             fontWeight:'bold',
                             color:'#52665A',
                             fontSize:27
-                        }}>Qual o nome do</Text>
+                        }}>Como podemos chamar</Text>
 
                         <Text style={{
                             fontWeight:'bold',
                             color:'#52665A',
                             fontSize:27
-                        }}>seu filho(a)?</Text>
+                        }}>você?</Text>
                     </View>
 
                     <TextInput
@@ -73,23 +73,20 @@ export default function presents({navigation}) {
                     style={{
                         marginTop: 45,
                         marginBottom:30,
+                        backgroundColor: name != '' ? '#4B8CFF':'#AAC9FF',
+                        borderRadius:21,
+                        width:'67%',
+                        height:65,
                         alignItems:'center',
-                        width:'100%'
+                        justifyContent:'center'
                     }}>
-                        <View style={{
-                            backgroundColor: name != '' ? '#4B8CFF':'#AAC9FF',
-                            borderRadius:21,
-                            width:'67%',
-                            height:65,
-                            alignItems:'center',
-                            justifyContent:'center'
-                        }}>
-                            <Text style={{
-                                fontSize:23,
-                                color:'white',
-                                marginTop:-2
-                            }}>Confirmar</Text>
-                        </View>
+
+                        <Text style={{
+                            fontSize:23,
+                            color:'white',
+                            marginTop:-2
+                        }}>Confirmar</Text>
+                        
                     </TouchableOpacity>
 
                 </View>

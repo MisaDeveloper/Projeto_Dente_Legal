@@ -79,22 +79,21 @@ export default function presents({navigation}) {
                     onPress={ () => navigation.navigate('input') }
                     style={{
                         marginTop: 35,
-                        alignItems:'center'
+                        backgroundColor:'#4B8CFF',
+                        borderRadius:15,
+                        width:70,
+                        height:70,
+                        alignItems:'center',
+                        justifyContent:'center',
+                        alignSelf: 'center'
                     }}>
-                        <View style={{
-                            backgroundColor:'#4B8CFF',
-                            borderRadius:15,
-                            width:70,
-                            height:70,
-                            alignItems:'center',
-                            justifyContent:'center'
-                        }}>
+
                             <Text style={{
                                 fontSize:40,
                                 color:'white',
                                 marginTop:-5
                             }}>></Text>
-                        </View>
+                            
                     </TouchableOpacity>
 
             </View>

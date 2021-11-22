@@ -64,23 +64,20 @@ export default function presents({navigation}) {
                     style={{
                         marginTop: 45,
                         marginBottom:30,
+                        backgroundColor:'#4B8CFF',
+                        borderRadius:21,
+                        width:'67%',
+                        height:65,
                         alignItems:'center',
-                        width:'100%'
+                        justifyContent:'center'
                     }}>
-                        <View style={{
-                            backgroundColor:'#4B8CFF',
-                            borderRadius:21,
-                            width:'67%',
-                            height:65,
-                            alignItems:'center',
-                            justifyContent:'center'
-                        }}>
-                            <Text style={{
-                                fontSize:20,
-                                color:'white',
-                                marginTop:-2
-                            }}>Vamos começar</Text>
-                        </View>
+
+                        <Text style={{
+                            fontSize:20,
+                            color:'white',
+                            marginTop:-2
+                        }}>Vamos começar</Text>
+                        
                     </TouchableOpacity>
 
                 </View>

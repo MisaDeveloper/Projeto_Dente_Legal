@@ -64,7 +64,7 @@ export default function home({navigation}) {
             </View>
 
 
-            <View 
+            <TouchableOpacity 
             style={{
                 alignItems: 'center',
                 backgroundColor: '#74E1F360',
@@ -89,9 +89,9 @@ export default function home({navigation}) {
                 }}>
                     Como escovar os dentes?
                 </Text>
-            </View>
+            </TouchableOpacity>
 
-            <View 
+            <TouchableOpacity  
             style={{
                 alignItems: 'center',
                 backgroundColor: '#74E1F360',
@@ -112,13 +112,13 @@ export default function home({navigation}) {
 
                 <Text style={{
                     fontWeight: 'bold',
-                    fontSize: 16
+                    fontSize: 16,
                 }}>
                     Como escolher a escova ideal?
                 </Text>
-            </View>
+            </TouchableOpacity >
 
-            <View 
+            <TouchableOpacity  
             style={{
                 alignItems: 'center',
                 backgroundColor: '#74E1F360',
@@ -143,7 +143,7 @@ export default function home({navigation}) {
                 }}>
                     Como escolher o creme dental?
                 </Text>
-            </View>
+            </TouchableOpacity >
         </ScrollView>
     );
 }
