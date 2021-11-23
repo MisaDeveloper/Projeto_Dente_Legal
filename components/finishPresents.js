@@ -23,7 +23,7 @@ export default function presents({navigation}) {
                         style={{
                             width:150,
                             height:180,
-                            marginTop:'15%',
+                            marginTop:'20%',
                         }}
                     />
 

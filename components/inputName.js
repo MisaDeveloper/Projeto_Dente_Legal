@@ -23,7 +23,7 @@ export default function presents({navigation}) {
                         style={{
                             width:150,
                             height:180,
-                            marginTop:'10%',
+                            marginTop:'20%',
                             marginRight:-18
                         }}
                     />
@@ -73,7 +73,15 @@ export default function presents({navigation}) {
                     style={{
                         marginTop: 45,
                         marginBottom:30,
-                        backgroundColor: name != '' ? '#4B8CFF':'#AAC9FF',
+                        backgroundColor: name != '' 
+                        && name != ' ' 
+                        && name != '  ' 
+                        && name != '   ' 
+                        && name != '    ' 
+                        && name != '     ' 
+                        && name != '      ' 
+                        && name != '       ' 
+                        && name != '        ' ? '#4B8CFF':'#AAC9FF',
                         borderRadius:21,
                         width:'67%',
                         height:65,

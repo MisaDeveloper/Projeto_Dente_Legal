@@ -32,7 +32,7 @@ export default function home({navigation}) {
                     left: '37%'
                 }}>
                     <Text style={{
-                        fontSize: 30
+                        fontSize: 30,
                     }}>
                         Olá,
                     </Text>
@@ -65,6 +65,7 @@ export default function home({navigation}) {
 
 
             <TouchableOpacity 
+            onPress={()=>navigation.navigate('comp1')}
             style={{
                 alignItems: 'center',
                 backgroundColor: '#74E1F360',
@@ -73,8 +74,6 @@ export default function home({navigation}) {
                 padding: 20,
                 borderRadius: 35, 
                 marginBottom: 40,
-                borderLeftColor: '#00000010',
-                borderLeftWidth: 5
             }}>
                 <Image
                     source={require('./images/cont_1.png')}
@@ -85,13 +84,15 @@ export default function home({navigation}) {
 
                 <Text style={{
                     fontWeight: 'bold',
-                    fontSize: 16
+                    fontSize: 16,
+                    color: 'black'
                 }}>
                     Como escovar os dentes?
                 </Text>
             </TouchableOpacity>
 
-            <TouchableOpacity  
+            <TouchableOpacity
+            onPress={()=>navigation.navigate('comp2')}  
             style={{
                 alignItems: 'center',
                 backgroundColor: '#74E1F360',
@@ -100,8 +101,6 @@ export default function home({navigation}) {
                 padding: 20,
                 borderRadius: 35,
                 marginBottom: 40,
-                borderLeftColor: '#00000010',
-                borderLeftWidth: 5
             }}>
                 <Image
                     source={require('./images/cont_2.png')}
@@ -113,12 +112,14 @@ export default function home({navigation}) {
                 <Text style={{
                     fontWeight: 'bold',
                     fontSize: 16,
+                    color: 'black'
                 }}>
                     Como escolher a escova ideal?
                 </Text>
             </TouchableOpacity >
 
             <TouchableOpacity  
+            onPress={()=>navigation.navigate('comp3')}  
             style={{
                 alignItems: 'center',
                 backgroundColor: '#74E1F360',
@@ -127,8 +128,6 @@ export default function home({navigation}) {
                 padding: 20,
                 borderRadius: 35, 
                 marginBottom: 40,
-                borderLeftColor: '#00000010',
-                borderLeftWidth: 5
             }}>
                 <Image
                     source={require('./images/cont_3.png')}
@@ -139,7 +138,8 @@ export default function home({navigation}) {
 
                 <Text style={{
                     fontWeight: 'bold',
-                    fontSize: 16
+                    fontSize: 16,
+                    color: 'black'
                 }}>
                     Como escolher o creme dental?
                 </Text>
